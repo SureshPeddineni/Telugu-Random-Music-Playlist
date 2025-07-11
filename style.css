@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap');
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(360deg, #0e91e2, #f4c5c5 );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+ 
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 100px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  font-family: "Bungee", sans-serif;
+  
+}
+
+.container h1{
+  color: #ff3d3d;
+  
+}
+
+#songBox {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff5e57;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ff3d3d;
+}
+
+audio {
+  width: 100%;
+  max-width: 400px;
+}
+.note-emoji {
+  display: inline-block;
+  animation: bounceNote 1s ease-in-out infinite;
+  
+}
+
+/* Make the second emoji delay for a wave effect */
+.note-emoji:last-child {
+  animation-delay: 0.5s;
+  
+}
+
+@keyframes bounceNote {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
